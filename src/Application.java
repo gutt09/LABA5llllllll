@@ -7,8 +7,15 @@ public class Application {
         pole.startspawn(Field.startR, Field.rabbit);
         pole.startspawn(Field.startW, Field.wolf);
         int countIterations = vvod();
-        pole.simulation(countIterations);
+        for(int i=0; i<countIterations;i++)
+        {
+            pole.iteration();
+            pole.printField();
+        }
+
     }
+
+
     public static int vvod()
     {
         System.out.print("Введите количество итераций -> ");

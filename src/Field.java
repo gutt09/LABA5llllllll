@@ -36,12 +36,6 @@ public class Field {
         }
     }
 
-    protected void simulation(int countIterations) {
-        for (int i = 0; i < countIterations; i++) {
-            iteration();
-            printField();
-        }
-    }
 
     protected void iteration() {
         for (int i = 0; i < size; i++) {
